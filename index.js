@@ -34,7 +34,7 @@ router.post('/checkLots', function*(next) {
 
 function getCorrection(str) {
     return function(done) {
-        gingerbread(str, { lang: 'GB'}, done);
+        gingerbread(str, { lang: 'UK'}, done);
     };
 }
 
