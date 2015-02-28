@@ -9,12 +9,15 @@ app.use(bodyParser());
 console.log('starting');
 
 router.get('/check/:string', function *(next){
+    console.log('getting corrections for', this.params.string);
     var correction = yield getCorrection(this.params.string);
     this.body = correction.slice(0,2);
     yield next;
 });
 
-router.post('/checkLots', function*(next) {
+router.post('/checkLots', function*(next) {i
+
+    console.log('recieved post req', this.request.body);
     if(!(this.request.body  && Array.isArray(this.request.body))) {
         this.body = { "error": "Input must be an array of strings" }
         this.status = 400;
@@ -39,4 +42,5 @@ function getCorrection(str) {
 
 app.use(router.routes());
 app.use(router.allowedMethods());
+console.log('listening on port ' + (process.env.PORT || 3000));
 app.listen(process.env.PORT || 3000);
