@@ -11,11 +11,12 @@
 		},
 		"devDependencies": {},
 		"scripts": {
-			"test": "echo \"Error: no test specified\" && exit 1"
+			"test": "echo \"Error: no test specified\" && exit 1",
+			"start": "node index.js"
+		},
+		"engines": {
+			"iojs": "1.0.x"
 			},
-			"engines": {
-				"iojs": "1.0.x"
-				},
-				"author": "",
-				"license": "ISC"
-			}
+			"author": "",
+			"license": "ISC"
+		}
