@@ -3,8 +3,10 @@ var app = koa();
 var router = require('koa-router')();
 var bodyParser = require('koa-body-parser');
 var gingerbread = require('gingerbread');
+var cors = require('koa-cors');
 
 app.use(bodyParser());
+app.use(cors());
 
 router.get('/check/:string', function *(next){
     var correction = yield getCorrection(this.params.string);
