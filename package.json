@@ -1,0 +1,23 @@
+{
+    "name": "grammar",
+        "version": "1.0.0",
+        "description": "Service to check grammar",
+        "main": "index.js",
+        "dependencies": {
+            "gingerbread": "^0.4.0",
+            "koa": "^0.18.0",
+            "koa-body-parser": "^1.1.1",
+            "koa-router": "^4.2.0"
+        },
+        "devDependencies": {},
+        "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1"
+        },
+        {
+            "engines": {
+                "iojs": "1.0.x"
+            }
+        }
+    "author": "",
+        "license": "ISC"
+}
