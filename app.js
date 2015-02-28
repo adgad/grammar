@@ -7,7 +7,11 @@ var gingerbread = require('gingerbread');
 app.use(bodyParser());
 
 console.log('starting');
+console.log(process.env.PORT);
+console.log('2');
 
+
+console.log('router', router);
 router.get('/check/:string', function *(next){
     console.log('getting corrections for', this.params.string);
     var correction = yield getCorrection(this.params.string);
