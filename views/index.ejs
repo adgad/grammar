@@ -14,20 +14,44 @@
             text-align: center;
             margin: 0;
             padding: 0;
+            font-size: 16px;
           }
+
           .block {
-            font-size: 32px;
-            padding: 20px;
+            font-size: 2em;
+            padding: 0.8em;
             background: #FF8989;
             margin: 0;
           }
           .verb {
-            font-size: 64px;
+            font-size: 4em;
             font-family: 'Rancho', cursive;
           }
           .noun {
-            font-size: 64px;
+            font-size: 4em;
             font-family: 'Homenaje', sans-serif;
+          }
+          @media screen and (max-width: 720px) {
+            body {
+              font-size: 12px;
+            }
+            .noun {
+              font-size: 3em;
+            }
+          }
+          .more {
+            font-size: 1em;
+            background-color: #93CDFF;
+            padding: 1em;
+            border: 1px solid #319AFF;
+            cursor: pointer;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: 'Open Sans Condensed', sans-serif;
+          }
+          .more:hover {
+            background-color: #319AFF;
           }
 
         </style>
@@ -48,6 +72,6 @@
       <p class="block">Developed using...</p>
       <p class="noun"><%= noun %> Driven Development</p>
 
-
+      <a class="more" href="/">MORE</a>
     </body>
 </html>
