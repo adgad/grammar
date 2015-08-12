@@ -4,7 +4,10 @@
   "description": "Service to check grammar",
   "main": "index.js",
   "dependencies": {
+    "co-views": "^1.0.0",
+    "ejs": "^2.3.3",
     "gingerbread": "^0.4.0",
+    "isomorphic-fetch": "^2.1.1",
     "koa": "^0.18.0",
     "koa-body-parser": "^1.1.1",
     "koa-cors": "0.0.14",

@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Rancho|Homenaje|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <style>
+          body {
+            background-color: #eaeaea;
+            font-family: 'Open Sans Condensed', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+          }
+          .block {
+            font-size: 32px;
+            padding: 20px;
+            background: #FF8989;
+            margin: 0;
+          }
+          .verb {
+            font-size: 64px;
+            font-family: 'Rancho', cursive;
+          }
+          .noun {
+            font-size: 64px;
+            font-family: 'Homenaje', sans-serif;
+          }
+
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+      <p class="block">Idea:</p>
+      <% if (type === 'service')  { %>
+      <p class="verb"><%= verb %> as a Service</p>
+      <% } else { %>
+      <p class="verb"><%= type %> for <%= noun2 %></p>
+
+      <% } %>
+      <p class="block">Developed using...</p>
+      <p class="noun"><%= noun %> Driven Development</p>
+
+
+    </body>
+</html>
